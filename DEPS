@@ -1,2 +1,0 @@
-res-players
-res-weapons
