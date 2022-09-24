@@ -1,0 +1,64 @@
+particles/buildables/human_base/corrode
+{
+	ejector
+	{
+		particle
+		{
+			shader sync gfx/buildables/acid_tube/spore
+
+			displacement 0 0 8 ~0
+
+			velocityType      static
+			velocityDir       linear
+			velocityMagnitude 50
+			velocity          0 0 1 ~60
+
+			accelerationType      static
+			accelerationDir       linear
+			accelerationMagnitude 50
+			acceleration          0 0 1 0
+
+			radius 0 10 50
+			alpha  0 .5 0
+			rotation 0 ~360 -
+			bounce .5
+
+			lifeTime 1500~50%
+		}
+
+		count infinite
+		delay 0
+		period 200 - ~0%
+	}
+
+	ejector
+	{
+		particle
+		{
+			shader sync gfx/weapons/tracer/spark
+
+			displacement 0 0 11 ~0
+
+			velocityType      static
+			velocityDir       linear
+			velocityMagnitude 200
+			velocity          0 0 1 ~60
+
+			accelerationType      static
+			accelerationDir       linear
+			accelerationMagnitude 800
+			acceleration          0 0 -1 0
+
+			radius 0 4 2
+			alpha  0 1 0
+			rotation 0 ~360 -
+			bounce .6
+
+			lifeTime 1500~50%
+		}
+
+		count infinite
+		delay 0
+		period 700 - ~0%
+	}
+}
